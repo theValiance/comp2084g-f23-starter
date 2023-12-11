@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Raleway:wght@300&display=swap');
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary, .badge-primary {
+    background-color: #FF5722;
+    border-color: #757575;
+}
+
+    .btn-primary:hover {
+        background-color: #4CAF50;
+        border-color: #757575;
+    }
+
+a {
+    color: #4CAF50;
+}
+
+.thumb {
+    width: 100px;
+}
+
+.small-input {
+    width: 100px;
+}
