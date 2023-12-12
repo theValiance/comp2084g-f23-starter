@@ -28,6 +28,13 @@ namespace VeggiTales.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        //GET: Sales Report
+        public async Task<IActionResult> SalesReport()
+        {
+            var applicationDbContext = _context.Products.Include(p => p.Category);
+            return View(await applicationDbContext.ToListAsync());
+        }
+
         [AllowAnonymous]
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -165,7 +172,7 @@ namespace VeggiTales.Controllers
                 return NotFound();
             }
 
-            return View(product);
+            return View("Delete", product);
         }
 
         // POST: Products/Delete/5
